@@ -36,9 +36,9 @@ const author = document.getElementById("author");
 const job = document.getElementById("job");
 const info = document.getElementById("info");
 
-const prevBtn = document.getElementById('prev-btn')
-const nextBtn = document.getElementById('next-btn')
-const randomBtn = document.getElementById('random-btn')
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const randomBtn = document.getElementById("random-btn");
 
 // set starting item
 let currentItem = 0;
@@ -51,3 +51,12 @@ window.addEventListener("DOMContentLoaded", function () {
   job.textContent = item.job;
   info.textContent = item.text;
 });
+
+// show person based on item
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}
