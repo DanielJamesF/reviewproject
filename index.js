@@ -39,3 +39,6 @@ const info = document.getElementById("info");
 const prevBtn = document.getElementById('prev-btn')
 const nextBtn = document.getElementById('next-btn')
 const randomBtn = document.getElementById('random-btn')
+
+// set starting item
+let currentItem = 0;
